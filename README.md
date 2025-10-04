@@ -34,6 +34,21 @@ Esta organización permite mantener el proyecto modular, escalable y alineado co
 
 ---
 
+## Integración con el API Rest
+
+```bash
+
+En el archivo src/api/client.ts
+
+Cambiar el valor de la variable "baseURL"
+
+Ejemplo:
+baseURL: 'http://localhost:8080/api'
+
+```
+
+---
+
 ## 📐 Diagrama de Arquitectura (Mermaid)
 
 ```mermaid
