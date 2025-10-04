@@ -100,6 +100,22 @@ npm test -- --watch
 
 # Reporte de cobertura
 npm test -- --coverage
+
+
+--------------------------------|---------|----------|---------|---------|-------------------
+File                            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------------------|---------|----------|---------|---------|-------------------
+All files                       |     100 |      100 |     100 |     100 |                   
+ features/properties/components |     100 |      100 |     100 |     100 |                   
+  PropertyCard.tsx              |     100 |      100 |     100 |     100 |                   
+  PropertyForm.tsx              |     100 |      100 |     100 |     100 |                   
+ utils                          |     100 |      100 |     100 |     100 |                   
+  formatters.ts                 |     100 |      100 |     100 |     100 |                   
+--------------------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 2 passed, 2 total
+Tests:       13 passed, 13 total
+
 ```
 
 ---
