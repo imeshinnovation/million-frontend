@@ -9,12 +9,12 @@ Frontend de la plataforma **Million**, desarrollado con **React + TypeScript + V
 ```bash
 /public
 /src
-  /application       # Casos de uso y lógica de aplicación
-  /domain            # Entidades y contratos de negocio
-  /infrastructure    # Adaptadores, repositorios e implementaciones externas
-  /presentation      # Componentes, vistas y controladores de UI
-  /shared            # Utilidades, constantes y tipos globales
-  /tests             # Pruebas unitarias e integración
+  /api
+  /components/Layout
+  /features/properties
+  /pages
+  /styles
+  /utils
 ```
 
 Esta organización responde al enfoque de **Clean Architecture**, desacoplando la lógica de negocio de los frameworks o librerías.
