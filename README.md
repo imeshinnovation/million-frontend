@@ -4,7 +4,7 @@ Frontend de la plataforma **Million**, desarrollado con **React + TypeScript + V
 
 ---
 
-[![CI/CD](https://github.com/imeshinnovation/million-frontend/actions/workflows/ci.yml/badge.svg?style=for-the-badge)](https://github.com/imeshinnovation/million-frontend/actions/workflows/ci.yml)
+[![CI/CD](https://img.shields.io/github/actions/workflow/status/imeshinnovation/million-frontend/ci.yml?style=for-the-badge&logo=github)](https://github.com/imeshinnovation/million-frontend/actions/workflows/ci.yml)
 ![React](https://img.shields.io/badge/React-18.0.0-blue?style=for-the-badge&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5.0.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
