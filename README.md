@@ -183,12 +183,21 @@ flowchart LR
 
 ---
 
-## 🤝 Contribuciones
+## Identificación de Vulnerabilidades
 
-1. Fork del repositorio  
-2. Crear rama `feature/tu-feature`  
-3. Commit con descripción clara  
-4. Pull Request con detalle técnico  
+```bash
+"vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+
+npm audit --json > npm-audit.json
+
+```
 
 ---
 
