@@ -8,7 +8,7 @@ Frontend de la plataforma **Million**, desarrollado con **React + TypeScript + V
 ![React](https://img.shields.io/badge/React-18.0.0-blue?logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5.0.0-646CFF?logo=vite&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-3178C6?logo=typescript&logoColor=white)
-![Vitest](https://img.shields.io/badge/Vitest-Unit_Tests-6E9F18?logo=vitest&logoColor=white)
+![Jest](https://img.shields.io/badge/Tests-Jest-C21325?logo=jest&logoColor=white)
 ![ESLint](https://img.shields.io/badge/Code_Style-ESLint-4B32C3?logo=eslint&logoColor=white)
 ![Prettier](https://img.shields.io/badge/Formatter-Prettier-F7B93E?logo=prettier&logoColor=white)
 ![SOLID](https://img.shields.io/badge/Principles-SOLID-orange)
