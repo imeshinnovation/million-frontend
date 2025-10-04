@@ -4,6 +4,19 @@ Frontend de la plataforma **Million**, desarrollado con **React + TypeScript + V
 
 ---
 
+[![CI/CD](https://github.com/imeshinnovation/million-frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/imeshinnovation/million-frontend/actions/workflows/ci.yml)
+![React](https://img.shields.io/badge/React-18.0.0-blue?logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5.0.0-646CFF?logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-3178C6?logo=typescript&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-Unit_Tests-6E9F18?logo=vitest&logoColor=white)
+![ESLint](https://img.shields.io/badge/Code_Style-ESLint-4B32C3?logo=eslint&logoColor=white)
+![Prettier](https://img.shields.io/badge/Formatter-Prettier-F7B93E?logo=prettier&logoColor=white)
+![SOLID](https://img.shields.io/badge/Principles-SOLID-orange)
+![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-blueviolet)
+![License](https://img.shields.io/github/license/imeshinnovation/million-frontend)
+
+---
+
 ## 📂 Estructura del Proyecto
 
 ```bash
