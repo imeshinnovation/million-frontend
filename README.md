@@ -191,4 +191,6 @@ Este proyecto está bajo la licencia **MIT**.
 - Ingeniero de Software
 - Especialista en Seguridad de la Información
 - Desarrollador FulStack Senior
+
+### Email:
 📧 imesh.innovation@gmail.com | 📧 sigueme.android@gmail.com  
