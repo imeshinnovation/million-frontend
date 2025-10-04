@@ -1,4 +1,3 @@
-// src/features/properties/components/__tests__/PropertyForm.test.tsx
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MantineProvider } from '@mantine/core';
@@ -22,7 +21,7 @@ describe('PropertyForm', () => {
     mockOnSubmit.mockClear();
   });
 
-  it('should render all form fields', () => {
+  it('Debería representar todos los campos del formulario.', () => {
     renderWithMantine(<PropertyForm onSubmit={mockOnSubmit} loading={false} />);
     
     expect(screen.getByLabelText(/nombre de la propiedad/i)).toBeInTheDocument();
@@ -32,7 +31,7 @@ describe('PropertyForm', () => {
     expect(screen.getByRole('button', { name: /crear propiedad/i })).toBeInTheDocument();
   });
 
-  it('should call onSubmit with correct data when form is valid', async () => {
+  it('Debe llamar a onSubmit con datos correctos cuando el formulario sea válido', async () => {
     const user = userEvent.setup();
     renderWithMantine(<PropertyForm onSubmit={mockOnSubmit} loading={false} />);
 
@@ -74,7 +73,7 @@ describe('PropertyForm', () => {
     expect(Number(submittedData.priceProperty)).toBe(testData.priceProperty);
   });
 
-  it('should show validation errors for invalid fields', async () => {
+  it('Debería mostrar errores de validación para campos no válidos.', async () => {
     const user = userEvent.setup();
     renderWithMantine(<PropertyForm onSubmit={mockOnSubmit} loading={false} />);
     
@@ -103,21 +102,21 @@ describe('PropertyForm', () => {
     expect(mockOnSubmit).not.toHaveBeenCalled();
   });
 
-  it('should disable button when loading', () => {
+  it('Debería desactivar el botón al cargar', () => {
     renderWithMantine(<PropertyForm onSubmit={mockOnSubmit} loading={true} />);
     
     const button = screen.getByRole('button', { name: /crear propiedad/i });
     expect(button).toBeDisabled();
   });
 
-  it('should enable button when not loading', () => {
+  it('Debería habilitar el botón cuando no esté cargando', () => {
     renderWithMantine(<PropertyForm onSubmit={mockOnSubmit} loading={false} />);
     
     const button = screen.getByRole('button', { name: /crear propiedad/i });
     expect(button).toBeEnabled();
   });
 
-  it('should handle form submission with valid data', async () => {
+  it('Debe gestionar el envío del formulario con datos válidos', async () => {
     const user = userEvent.setup();
     renderWithMantine(<PropertyForm onSubmit={mockOnSubmit} loading={false} />);
 
@@ -159,7 +158,7 @@ describe('PropertyForm', () => {
     expect(Number(submittedData.priceProperty)).toBe(validData.priceProperty);
   });
 
-  it('should display formatted price description', async () => {
+  it('Debe mostrar la descripción del precio formateada', async () => {
     const user = userEvent.setup();
     renderWithMantine(<PropertyForm onSubmit={mockOnSubmit} loading={false} />);
 
