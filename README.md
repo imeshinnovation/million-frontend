@@ -1,73 +1,174 @@
-# React + TypeScript + Vite
+# Million Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend de la plataforma **Million**, desarrollado con **React + TypeScript + Vite**, bajo los principios de **Clean Architecture** y **SOLID**, asegurando escalabilidad, mantenibilidad y facilidad de pruebas.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📂 Estructura del Proyecto
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+/public
+/src
+  /application       # Casos de uso y lógica de aplicación
+  /domain            # Entidades y contratos de negocio
+  /infrastructure    # Adaptadores, repositorios e implementaciones externas
+  /presentation      # Componentes, vistas y controladores de UI
+  /shared            # Utilidades, constantes y tipos globales
+  /tests             # Pruebas unitarias e integración
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Esta organización responde al enfoque de **Clean Architecture**, desacoplando la lógica de negocio de los frameworks o librerías.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📐 Diagrama de Arquitectura (Mermaid)
+
+```mermaid
+flowchart TD
+  subgraph UI[Presentation Layer]
+    A[React Components] --> B[State Management / Hooks]
+  end
+
+  subgraph App[Application Layer]
+    B --> C[Use Cases]
+  end
+
+  subgraph Domain[Domain Layer]
+    C --> D[Entities]
+    C --> E[Interfaces (Repositories)]
+  end
+
+  subgraph Infra[Infrastructure Layer]
+    E --> F[API Adapters / Repositories Impl]
+    F --> G[External Services / REST API]
+  end
+
+  UI --> App
+  App --> Domain
+  Infra --> Domain
 ```
+
+Este flujo asegura que la **dependencia siempre apunte hacia adentro**, protegiendo la lógica de negocio.
+
+---
+
+## 🛠️ Principios SOLID aplicados
+
+| Principio | Implementación |
+|-----------|----------------|
+| **S**ingle Responsibility | Cada componente y clase tiene una única responsabilidad (ej: un `UserRepository` solo maneja persistencia de usuarios). |
+| **O**pen/Closed | Nuevos casos de uso se agregan sin modificar los existentes, solo extendiendo interfaces. |
+| **L**iskov Substitution | Repositorios falsos (mocks) pueden sustituir implementaciones reales sin romper el sistema. |
+| **I**nterface Segregation | Interfaces pequeñas y específicas (ej: `AuthRepository`, `UserRepository`) en lugar de interfaces genéricas enormes. |
+| **D**ependency Inversion | Casos de uso dependen de **interfaces** del dominio y no de implementaciones concretas. |
+
+---
+
+## ✅ Estrategia de Pruebas
+
+Este proyecto aplica pruebas con **Jest** y **Testing Library** para garantizar la calidad.
+
+- **Unitarias** → entidades, funciones puras y casos de uso.  
+- **Integración** → interacción entre aplicación, presentación e infraestructura.  
+- **End-to-End (E2E)** → flujos completos de usuario (cuando aplique, usando Cypress/Playwright).  
+
+### Diagrama de Flujo de Pruebas
+
+```mermaid
+graph TD
+  A[Unit Tests] --> B[Integration Tests]
+  B --> C[E2E Tests]
+  C --> D[Coverage & Reports]
+```
+
+### Comandos de Pruebas
+
+```bash
+# Ejecutar todas las pruebas
+npm test
+
+# Modo watch
+npm test -- --watch
+
+# Reporte de cobertura
+npm test -- --coverage
+```
+
+---
+
+## 🏗️ Desarrollo Local
+
+```bash
+# Clonar repositorio
+git clone https://github.com/imeshinnovation/million-frontend.git
+cd million-frontend
+
+# Instalar dependencias
+npm install
+
+# Levantar entorno de desarrollo
+npm run dev
+
+# Compilar para producción
+npm run build
+
+# Servir versión compilada
+npm run preview
+```
+
+---
+
+## 📊 Flujo de Datos (Clean Architecture)
+
+```mermaid
+sequenceDiagram
+  participant User as Usuario
+  participant UI as React UI
+  participant UseCase as Use Case
+  participant Repo as Repository (Interface)
+  participant API as API Adapter
+  participant Server as Backend
+
+  User->>UI: Interacción (ej: "Login")
+  UI->>UseCase: Invoca caso de uso
+  UseCase->>Repo: Solicita datos
+  Repo->>API: Llamada a API
+  API->>Server: Petición HTTP/REST
+  Server-->>API: Respuesta JSON
+  API-->>Repo: Devuelve datos
+  Repo-->>UseCase: Entidades de dominio
+  UseCase-->>UI: Resultado procesado
+  UI-->>User: Actualiza vista
+```
+
+---
+
+## 📦 Buenas Prácticas Adoptadas
+
+- **TypeScript** para tipado estático y reducción de errores.  
+- **Linting** con ESLint y convenciones de commits (`conventional commits`).  
+- **CI/CD Ready** → preparado para pipelines con integración continua.  
+- **Inyección de dependencias** para mayor testabilidad.  
+- **Código modular** con separación de responsabilidades.  
+
+---
+
+## 🤝 Contribuciones
+
+1. Fork del repositorio  
+2. Crear rama `feature/tu-feature`  
+3. Commit con descripción clara  
+4. Pull Request con detalle técnico  
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia **MIT**.  
+
+---
+
+## 👤 Autor
+
+**Alexander Rubio Cáceres**  
+📧 imesh.innovation@gmail.com | 📧 sigueme.android@gmail.com  
