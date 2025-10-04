@@ -188,4 +188,7 @@ Este proyecto está bajo la licencia **MIT**.
 ## 👤 Autor
 
 **Alexander Rubio Cáceres**  
+- Ingeniero de Software
+- Especialista en Seguridad de la Información
+- Desarrollador FulStack Senior
 📧 imesh.innovation@gmail.com | 📧 sigueme.android@gmail.com  
