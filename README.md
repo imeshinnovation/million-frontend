@@ -190,7 +190,7 @@ Este proyecto está bajo la licencia **MIT**.
 **Alexander Rubio Cáceres**  
 - Ingeniero de Software
 - Especialista en Seguridad de la Información
-- Desarrollador FulStack Senior
+- Desarrollador FullStack Senior
 
 ### Email:
 📧 imesh.innovation@gmail.com | 📧 sigueme.android@gmail.com  
