@@ -4,16 +4,16 @@ Frontend de la plataforma **Million**, desarrollado con **React + TypeScript + V
 
 ---
 
-[![CI/CD](https://github.com/imeshinnovation/million-frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/imeshinnovation/million-frontend/actions/workflows/ci.yml)
-![React](https://img.shields.io/badge/React-18.0.0-blue?logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-5.0.0-646CFF?logo=vite&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-3178C6?logo=typescript&logoColor=white)
-![Jest](https://img.shields.io/badge/Tests-Jest-C21325?logo=jest&logoColor=white)
-![ESLint](https://img.shields.io/badge/Code_Style-ESLint-4B32C3?logo=eslint&logoColor=white)
-![Prettier](https://img.shields.io/badge/Formatter-Prettier-F7B93E?logo=prettier&logoColor=white)
-![SOLID](https://img.shields.io/badge/Principles-SOLID-orange)
-![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-blueviolet)
-![License](https://img.shields.io/github/license/imeshinnovation/million-frontend)
+[![CI/CD](https://github.com/imeshinnovation/million-frontend/actions/workflows/ci.yml/badge.svg?style=for-the-badge)](https://github.com/imeshinnovation/million-frontend/actions/workflows/ci.yml)
+![React](https://img.shields.io/badge/React-18.0.0-blue?style=for-the-badge&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5.0.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Jest](https://img.shields.io/badge/Tests-Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
+![ESLint](https://img.shields.io/badge/Code_Style-ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
+![Prettier](https://img.shields.io/badge/Formatter-Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white)
+![SOLID](https://img.shields.io/badge/Principles-SOLID-orange?style=for-the-badge)
+![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-blueviolet?style=for-the-badge)
+![License](https://img.shields.io/github/license/imeshinnovation/million-frontend?style=for-the-badge)
 
 ---
 
