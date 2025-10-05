@@ -40,15 +40,18 @@ Esta organización permite mantener el proyecto modular, escalable y alineado co
 ```bash
 
 El proyecto cuenta con dos archivos de environment:
+
 - .env.development
 - .env.production
 
-Debes ajustar los parametros según el entorno a ejecutar.
+Debes ajustar los parametros según el entorno a ejecutar, **¡Muy importante!** la variable VITE_API_BASE_URL, que apunta al API Rest.
 
 Para Pruebas ejecuta el proyecto así:
+
 - npm run dev
 
 Para Producción ejecuta el proyecto así:
+
 - npm run prod
 
 ```
