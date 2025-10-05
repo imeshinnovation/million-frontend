@@ -59,7 +59,7 @@ Para Producción ejecuta el proyecto así:
 
 ---
 
-## Score Lighthouse (Environment Production)
+## 🌎 Score Lighthouse (Environment Production)
 
 - SEO: 100%
 - Best Practices: 100%
