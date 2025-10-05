@@ -42,7 +42,7 @@ El proyecto cuenta con dos archivos de environment:
 - .env.development
 - .env.production
 
-Debes ajustas los parametros según el entorno a ejecutar.
+Debes ajustar los parametros según el entorno a ejecutar.
 
 Para Pruebas ejecuta el proyecto así:
 - npm run dev
