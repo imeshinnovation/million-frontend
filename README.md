@@ -168,8 +168,8 @@ npm run dev
 # Compilar para producción
 npm run build
 
-# Servir versión compilada
-npm run preview
+# Servir versión de producción
+npm run prod
 ```
 
 ---
