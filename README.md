@@ -4,6 +4,7 @@ Frontend de la plataforma **Million**, desarrollado con **React + TypeScript + V
 
 ---
 
+[![License](https://img.shields.io/badge/📄_License-MIT-blue?style=for-the-badge&logo=book)](LICENSE)
 [![CI/CD](https://img.shields.io/github/actions/workflow/status/imeshinnovation/million-frontend/ci.yml?style=for-the-badge&logo=github)](https://github.com/imeshinnovation/million-frontend/actions/workflows/ci.yml)
 ![React](https://img.shields.io/badge/React-18.0.0-blue?style=for-the-badge&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5.0.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -13,7 +14,7 @@ Frontend de la plataforma **Million**, desarrollado con **React + TypeScript + V
 ![Prettier](https://img.shields.io/badge/Formatter-Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white)
 ![SOLID](https://img.shields.io/badge/Principles-SOLID-orange?style=for-the-badge)
 ![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-blueviolet?style=for-the-badge)
-![License](https://img.shields.io/github/license/imeshinnovation/million-frontend?style=for-the-badge)
+
 
 ---
 
