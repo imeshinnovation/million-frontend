@@ -44,7 +44,8 @@ El proyecto cuenta con dos archivos de environment:
 - .env.development
 - .env.production
 
-Debes ajustar los parametros según el entorno a ejecutar, ¡MUY IMPORTANTE! la variable VITE_API_BASE_URL, que apunta al API Rest.
+Debes ajustar los parametros según el entorno a ejecutar.
+¡MUY IMPORTANTE! la variable VITE_API_BASE_URL, que apunta al API Rest.
 
 Para Pruebas ejecuta el proyecto así:
 
