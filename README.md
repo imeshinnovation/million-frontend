@@ -54,6 +54,13 @@ Para Producción ejecuta el proyecto así:
 
 ---
 
+## Score Lighthouse (Environment Production)
+
+- SEO: 100%
+- Best Practices: 100%
+
+---
+
 ## 📐 Diagrama de Arquitectura (Mermaid)
 
 ```mermaid
