@@ -56,18 +56,20 @@ export const PropertyFilter: React.FC<PropertyFiltersProps> = ({ onFiltersChange
   return (
     <Box mb={30} p={10}>
       <TextInput
+        aria-label='Buscar por Nombre'
         label="Buscar por Nombre"
         placeholder="Ej: Apartamento en la Calera"
         {...form.getInputProps('name')}
       />
       <TextInput
+      aria-label='Buscar por Dirección'
         label="Buscar por Dirección"
         placeholder="Ej: Calle 1 # 12-34"
         mt="md"
         {...form.getInputProps('address')}
       />
 
-      <Text size="sm" mt="lg">
+      <Text size="sm" mt="lg" aria-label='Buscar por Precio'>
                 Buscar por precio
               </Text>
       <RangeSlider
@@ -79,6 +81,7 @@ export const PropertyFilter: React.FC<PropertyFiltersProps> = ({ onFiltersChange
         max={5000000000}
         step={10000000}
         minRange={10000000}
+        aria-label='Filtro de Precios'
         labelAlwaysOn
         value={[form.values.minPrice, form.values.maxPrice]}
         onChange={handleRangeChange}

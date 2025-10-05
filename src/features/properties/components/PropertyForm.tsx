@@ -30,6 +30,7 @@ export const PropertyForm: React.FC<PropertyFormProps> = ({ onSubmit, loading })
             <form onSubmit={form.onSubmit(onSubmit)}>
                 <TextInput
                     withAsterisk
+                    aria-label='Nombre de la Propiedad'
                     label="Nombre de la Propiedad"
                     placeholder="Ej: Apartamento en el centro"
                     {...form.getInputProps('name')}
@@ -37,6 +38,7 @@ export const PropertyForm: React.FC<PropertyFormProps> = ({ onSubmit, loading })
                 <TextInput
                     withAsterisk
                     label="Dirección"
+                    aria-label='Dirección'
                     placeholder="Ej: Calle 57 # 45-22"
                     mt="md"
                     {...form.getInputProps('addressProperty')}
@@ -57,6 +59,7 @@ export const PropertyForm: React.FC<PropertyFormProps> = ({ onSubmit, loading })
                 />
                 <TextInput
                     withAsterisk
+                    aria-label='URL de la Imagen'
                     label="URL de la Imagen"
                     placeholder="https://ejemplo.com/imagen.jpg"
                     mt="md"
@@ -64,7 +67,7 @@ export const PropertyForm: React.FC<PropertyFormProps> = ({ onSubmit, loading })
                 />
 
                 <Group justify="flex-end" mt="md">
-                    <Button type="submit" loading={loading}>
+                    <Button type="submit" loading={loading} aria-label='Crear Propiedad'>
                         Crear Propiedad
                     </Button>
                 </Group>

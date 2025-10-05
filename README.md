@@ -34,16 +34,21 @@ Esta organización permite mantener el proyecto modular, escalable y alineado co
 
 ---
 
-## Integración con el API Rest
+## Entornos de Ejecución del Proyecto
 
 ```bash
 
-En el archivo src/api/client.ts
+El proyecto cuenta con dos archivos de environment:
+- .env.development
+- .env.production
 
-Cambiar el valor de la variable "baseURL"
+Debes ajustas los parametros según el entorno a ejecutar.
 
-Ejemplo:
-baseURL: 'http://localhost:8080/api'
+Para Pruebas ejecuta el proyecto así:
+- npm run dev
+
+Para Producción ejecuta el proyecto así:
+- npm run prod
 
 ```
 
