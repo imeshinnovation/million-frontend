@@ -231,7 +231,7 @@ flowchart LR
 
 ---
 
-## Identificación de Vulnerabilidades
+## 🛡️ Identificación de Vulnerabilidades
 
 ```bash
 "vulnerabilities": {
